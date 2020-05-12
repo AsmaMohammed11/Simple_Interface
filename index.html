@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleUI</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
+
+    .labels {
+        color: gray;
+        font-family: 'Baloo 2', cursive;
+        font-size: 16px;
+    }
+
+    .box {
+        width: 900px;
+        margin: 155px auto;
+        height: 500px;
+
+
+    }
+
+    .arrow {
+
+        margin: 60px auto;
+    }
+
+    #arrow i:hover {
+        opacity: .3;
+    }
+
+    .b1 {
+        background-color: #88c38c;
+        text-align: center;
+        border-radius: 15px 0px 0px 15px;
+    }
+
+    .imge img {
+        width: 160px;
+        height: 160px;
+        border-radius: 90px;
+        padding: 7px;
+        margin: 55px auto;
+        text-align: center;
+    }
+
+    .footer {
+        color: black;
+        font-weight: bold;
+        font-size: 24px;
+        font-family: 'Baloo 2', cursive;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .MemberShip {
+        width: 32px;
+        height: 30px;
+        padding: 7px 0px 0px 6px;
+        border-radius: 50%;
+        position: relative;
+        display: inline-block;
+        background-color: rgb(228, 228, 228);
+        color: gray;
+        margin-right: 6px;
+
+    }
+
+    .iconF {
+        width: 40px;
+        height: 38px;
+        padding: 4px 0px 2px 9px;
+        border-radius: 50%;
+        position: relative;
+        display: inline-block;
+        background-color: rgb(228, 228, 228);
+        color: rgb(194, 194, 194);
+        margin-right: 6px;
+    }
+
+    .iconM {
+        width: 40px;
+        height: 38px;
+        padding: 4px 0px 2px 4px;
+        border-radius: 50%;
+        position: relative;
+        display: inline-block;
+        background-color: rgb(228, 228, 228);
+        color: rgb(194, 194, 194);
+        margin-right: 6px;
+    }
+
+
+
+    .labelRadio input {
+        display: none;
+    }
+
+
+
+    .labelRadio:hover .iconM {
+        opacity: .3;
+    }
+
+    .labelRadio:hover .iconF {
+        opacity: .3;
+    }
+
+    .labelRadio:hover .MemberShip {
+        opacity: .3;
+    }
+
+    .b2 {
+        background-color: #afdba3;
+        border-radius: 0px 15px 15px 0px;
+        padding-bottom: 30px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class=" row box justify-content-center">
+            <div class="col-4 b1 ">
+                <div class="imge d-flex  justify-content-center">
+                    <img src="man.png">
+                </div>
+                <div style="margin: 15px auto;">
+                    <h5><b>Let's get you set up</b></h5>
+                    <p class="w-25"></p>
+                    <h6>it should only take couple of minutes to pair with your watch</h6>
+                </div>
+                <div id="arrow">
+                    <i class="fa fa-arrow-circle-right arrow fa-3x" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="col-8 b2">
+                <div>
+                    <form style="padding-left: 60px;">
+                        <br>
+                        <br>
+                        <label class="w-25 labels" for="f">Name: </label>
+                        <input class="form-control col-6" style="border-radius:6px; display: inline-block" type="Text"
+                            placeholder="Full Name" name="first" id="f">
+                        <br>
+                        <br>
+                        <label class="w-25 labels" for="jender">Gender: </label>
+
+
+                        <label class="labelRadio labels" for="jenderM" style="margin-right: 40px;">
+                            <input class="radioInput" type="radio" name="first" id="jenderM" value="male">
+                            <i class=" iconM fa fa-mars fa-2x" aria-hidden="true"></i>
+                            <span>Male</span>
+
+                        </label>
+                        <label class="labelRadio labels" for="jenderM">
+                            <input class="radioInput" type="radio" name="first" id="jenderM" value="male">
+                            <i class=" iconF fa fa-venus fa-2x" aria-hidden="true"></i>
+                            <span>Female</span>
+
+                        </label>
+                        <br>
+                        <br>
+                        <label class="w-25 labels" for="s">Email:</label>
+                        <input class="form-control col-6" style="border-radius:6px; display: inline-block" type="Text"
+                            name="second" id="s" required="required" placeholder="example@hotmail.com">
+                        <br>
+                        <br>
+                        <label class="w-25 labels" for="s">Date of Birth:</label>
+                        <input class="form-control col-6" style="border-radius:6px; display: inline-block" type="date"
+                            name="second" id="s" placeholder="DD/MM/YYYY">
+                        <br>
+                        <br>
+                        <label class="w-25 labels " for="th">Mobile:</label>
+                        <input class="form-control col-6" style="border-radius:6px; display: inline-block" type="Text"
+                            placeholder="+966xxxxxxxxx" name="third" id="th">
+                        <br>
+                        <br>
+                        <label class="w-25 labels" for="th">Customer ID:</label>
+                        <input class="form-control col-6" style="border-radius:6px; display: inline-block" type="Text"
+                            placeholder="001-001-001" name="third" id="th">
+                        <br>
+                        <br>
+                        <label class="w-25 labels" for="jender">Membership: </label>
+
+
+                        <label class="labelRadio labels" for="jenderM" style="margin-right: 40px;">
+                            <input class="radioInput" type="radio" name="first" id="jenderM" value="male">
+                            <i class=" MemberShip fa fa-address-card-o fa-1x" aria-hidden="true"></i>
+                            <span>classic</span>
+
+                        </label>
+                        <label class="labelRadio labels" for="jenderM" style="margin-right: 40px;">
+                            <input class="radioInput" type="radio" name="first" id="jenderM" value="male">
+                            <i class="  MemberShip fa fa-address-card-o fa-1x" aria-hidden="true"></i>
+                            <span>Silver</span>
+
+                        </label>
+                        <label class="labelRadio labels" for="jenderM">
+                            <input class="radioInput" type="radio" name="first" id="jenderM" value="male">
+                            <i class=" MemberShip fa fa-address-card-o fa-1x" aria-hidden="true"></i>
+                            <span>Gold</span>
+
+                        </label>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="text-center " aria-label="Basic example">
+                            <button type="button" class="btn btn-primary ">Cancel</button>
+
+                            <button type="button" class="btn btn-primary " style="margin-left: 18px;">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <i class="fa fa-copyright" aria-hidden="true"></i>
+            <span>Asma1ll</span>
+        </div>
+    </div>
+
+</body>
+
+</html>
